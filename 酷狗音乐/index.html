@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>酷狗网站</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				background-color: #fafafa;
+			}
+			/**header部分**/
+			.header{
+				width: 100%;
+				height: 490px;
+				background-image: url(img/banner01.jpg);
+				background-position: center;
+				}
+			.login, .logo{
+				width: 50%;
+				height: 44px;
+				float: left;
+				box-sizing: border-box;/**怪异盒模型**/
+				padding-left: 220px;
+				margin-top: 30px;
+			}
+			.logo *{
+				display:block;
+				float: left;
+				cursor: pointer;
+			}
+			.logo a{
+				text-decoration: none;
+				color: #FFFFFF;
+				font-size: 22px;
+				margin-top: 7px;
+				margin-left: 20px;
+			}
+			.login *{
+				display: block;
+				float: left;
+				margin-top: 12px;
+				font-size: 14px;
+			}
+			.login a{
+				color: red;
+				text-decoration: none;
+				margin-right: 20px;
+			}
+			.login img{
+				margin: 5px;
+			}
+			/**导航条部分**/
+			.nav{
+				width: 100%;
+				height: 60px;
+				background-color: #FAFAFA;
+				float: left;
+				margin-top: 40px;
+			}
+			.nav>div{
+				float: left;
+				width: 150px;
+				height: 60px;
+				text-align: center;
+				line-height: 60px;
+			}
+			.nav>div:first-child{
+				margin-left: 200px;
+			}
+			.nav a{
+				display: block;
+				color: #666666;
+				text-decoration: none;
+				font-size: 18px;
+			}
+			.nav a:hover{
+				color: #FFFFFF;
+				background-color: #3cace7;
+			}
+			/**body部分**/
+			.body{
+				width: 1000px;
+				height: 500px;
+				margin: auto;
+			}
+			.body>div{
+				float: left;
+			}
+			/**company部分**/
+			.company{
+				width: 350px;
+				padding: 20px;
+				background-color: #FFFFFF;
+				box-sizing: border-box;
+				height: 310px;
+				margin-top: 20px;
+			}
+			.company>div:first-child{
+				border-bottom: 1px solid #e8e8e8;
+				margin-bottom: 15px;
+				box-sizing: border-box;
+				padding-bottom: 5px;
+			}
+			.company>div:last-child{
+				color: #8b7b9b;
+			}
+			.company a{
+				color: #3CACE7;
+				text-decoration: none;
+			}
+			.company a:hover{
+				text-decoration: underline;
+				color: #0000ff;
+			}
+			.job{
+				width: 620px;
+				height: 310px;
+				background-color: #ffffff;
+				box-sizing: border-box;
+				padding: 20px;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			.job *{
+				display: block;
+				float: left;
+			}
+			.hotjob{
+				border-bottom: 1px solid #e8e8e8 ;
+				box-sizing: border-box;
+				padding-bottom: 5px;
+			}
+			.hotjob a{
+				margin-left: 460px;
+				color: #666666;
+				text-decoration: none;
+			}
+			.hotjob a:hover{
+				text-decoration: underline;
+			}
+			.table{
+				margin-top: 30px;
+				color: #666666;
+				font-size: 16px;
+			}
+			tr{
+				height: 60px;
+				
+			}
+			.table a{
+				color: #666666;
+				text-decoration: none;
+			}
+			.table a:hover{
+				text-decoration: underline;
+			}
+			.footer{
+				width: 1000px;
+				height: 100px;
+				margin-top: 60px;
+				text-align: center;
+				font-size: 14px;
+				color: #666666;
+			}
+			.footer a{
+				color: #666666;
+				text-decoration: none;
+			}
+			.footer>div{
+				margin-bottom: 10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="img/logo.png"/>
+				<a href="">招聘官网</a>
+			</div>
+			<div class="login">
+				<a href="">求职登录</a>
+				<span>关注酷狗招聘：</span>
+				<img src="img/weiboIcon.png" />
+			</div>
+			<div class="nav">
+			    <div><a href="">首页</a></div>
+				<div><a href="">社会招聘</a></div>
+				<div><a href="">校园招聘</a></div>
+				<div><a href="">走进酷狗</a></div>
+				<div><a href="">内部推荐</a></div>
+				<div><a href="">FAQ</a></div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="company">
+				<div>公司介绍</div>
+				<div>
+					<img src="img/videoBg.jpg" />
+				</div>
+				<div>酷狗科技（KuGou NetWorks）是中国领先的数字音乐交互服务提供商，互联网技术创新的领军企业，致力于...<a href="">[详情]</a></div>
+			</div>
+			<div class="job">
+				<div class="hotjob">
+					<span>热门职位</span>
+					<a href="">更多》</a>
+				</div>
+				<div class="table">
+					<table width="100%">
+						<tr>
+							<td width="220px"><a href="">PTBU-数据挖掘工程师</a></td>
+							<td width="60px">天河区</td>
+							<td width="220px"><a href="">ZBBU- 高级音视频算法工程师(VOIP方向)</a></td>
+							<td width="60px">广州市</td>
+						</tr>
+						<tr>
+							<td width="220px"><a href="">PTBU-主编（歌单）</a></td>
+							<td width="60px">广州市</td>
+							<td width="220px"><a href="">YLBU-内容运营（音乐制作）</a></td>
+							<td width="60px">上海市</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="footer">
+				<div>
+					<a href="">关于酷狗</a>&nbsp;|&nbsp;
+					<a href="">广告服务</a>&nbsp;|&nbsp;
+					<a href="">友情链接</a>&nbsp;|&nbsp;
+					<a href="">版权指引</a>&nbsp;|&nbsp;
+					<a href="">推广合作</a>&nbsp;|&nbsp;
+					<a href="">招聘信息</a>&nbsp;|&nbsp;
+					<a href="">客服中心</a>&nbsp;|&nbsp;
+					<a href="">用户体验提升计划</a>&nbsp;|&nbsp;
+					<a href="">酷狗2017官方免费下载</a>
+				</div>
+				<div>网络视听许可证1910564号 文网文[2010]175号 Copyright (C) 2004-2017 KuGou-Inc.All Rights Reserved</div>
+				<div>增值电信业务经营许可证粤B2-20060339 粤ICP备09017694号-2</div>
+			</div>
+		</div> 
+	</body>
+</html>

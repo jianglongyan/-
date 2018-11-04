@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>汇博招聘网</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				background-color: #f2f2f2;
+			}
+			/**header部分**/
+			.header{
+				width: 100%;
+				min-width: 1200px;
+				height: 60px;
+				background-color: #FFFFFF;
+				border: 1px solid #FFFFFF;
+			}
+			.header>div{
+				float: left;
+			}
+			.header a{
+				text-decoration: none;
+				color: #999999;}
+			.logo{
+				width: 136px;
+				height: 28px;
+				margin-top: 16px;
+				margin-left: 180px;
+			}
+		.homePage, .explorer{
+			width: 70px;
+			height: 43px;
+			text-align: center;
+			padding-top: 17px;
+		}
+		.homePage{
+			margin-left: 16px;
+		}
+		.search{
+			width: 390px;
+			height: 43px;
+		}
+		.search>div:first-child{
+			float: left;
+			width: 60px;
+			height: 30px;
+			padding-top: 12px;
+			border: 2px solid red;
+			border-right:1px solid #DADADA;
+			text-align: center;
+			margin-top:7px;
+		}
+		.search>div:nth-child(2){
+			width: 250px;
+			height: 42px;
+			float: left;
+			margin-top: 7px;
+			border-top: 2px solid red;
+			border-bottom: 2px solid red;
+		}
+		.search>div:last-child{
+			width: 70px;
+			height: 35px;
+			float: left;
+			background-color: red;
+			text-align: center;
+			padding-top: 11px;
+			margin-top: 7px;
+			color: #FFFFFF;
+		}
+		.search input{
+			width: 248px;
+			height: 39px;
+			border: 0;
+		}
+		.highSearch{
+			width: 45px;
+			height: 55px;
+			text-align: center;
+			padding-top: 5px;
+		}
+		.jobRead, .login, .register{
+			width: 85px;
+			height: 45px;
+			text-align: center;
+			padding-top: 15px;
+		}
+		.jobRead{
+			margin-left: 20px;
+		}
+		/**content部分**/
+		.content{
+			width: 1000px;
+			height: 1576px;
+			margin: auto;
+			margin-top: 20px;
+			background-color:#FFFFFF ;
+		}
+		.companyInfo{
+			width: 1000px;
+			height: 220px;
+			border: 1px solid #EBEBEB;
+			background-color: #fcfcfc;
+		}
+		.companyInfo-logo{
+			width: 160px;
+			height: 160px;
+			margin-top: 28px;
+			margin-left: 20px;
+			float: left;
+		}
+		.companyInfo-desc{
+			width: 500px;
+			height: 220px;
+			float: left;
+			padding-left: 20px;
+		}
+		.companyInfo-desc>div:first-child{
+			font-size: 24px;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #295266;
+		}
+		.companyInfo-desc>div:nth-child(2){
+			font-size: 20px;
+			margin-top: 20px;
+			color: #666666;
+		}
+		.companyInfo-desc>div:nth-child(3){
+			font-size: 16px;
+			margin-top: 10px;
+			color: #999999;
+		}
+		.companyInfo-desc>div em{
+			font-style: normal;
+			display: inline-block;
+			font-size: 11px;
+			border: 1px solid #999999;
+			padding: 2px 7px;
+			margin: 8px;
+			color: #666666;
+		}
+		.companyInfo-operate{
+			width: 132px;
+			height: 83px;
+			float: right;
+			margin-top: 40px;
+		}
+		.companyInfo-operate>div{
+			width: 130px;
+			height: 27px;
+			border: 1px solid #dbdbdb;
+			border-right: 0;
+			text-align: center;
+			padding-top: 3px;
+		}
+		.companyInfo-operate>div:first-child{
+			color: #3d84b8;
+			border-bottom: 0;
+			background-color: #FFFFFF;  
+			}
+		.companyInfo-operate>div:first-child:hover{
+				background-color: #00AADB;
+				color: #FFFFFF;
+		}
+		/**绝对定位**/
+		.position{
+			width: 156px;
+			height: 70px;
+            background-image: url(img/mentRate03.png);
+            position: absolute;
+            left: 880px;
+            top: 78px;
+		}
+		.position>div{
+			width: 152px;
+			text-align: center;
+			color: #FFFFFF;
+		}
+		.position>div:first-child{
+			font-size: 24px;
+		}
+		.number
+		{
+			width: 1000px;
+			height: 100px;
+			border-bottom: 1px solid #f2f2f2;
+			float: left;
+		}
+		.number>div{
+			width: 130px;
+			height:50px;
+			text-align: center;
+			float: left;
+			margin-top: 25px;
+			border-left: 1px dashed #f2f2f2;
+		}
+		.number>div:first-child{
+			border-left:0;
+		}
+		.number>div span{
+			display: block;
+		}
+		.font{
+			color: #999999;
+		}
+		.details{
+			width: 1000px;
+			height: 1000px;
+			}
+		.left{
+			width: 700px;
+			height: 1250px;
+			float: left;
+		}
+		.top{
+			width: 700px;
+			height: 60px;
+			background-color: #FFFFFF;
+			border-bottom: 1px solid #f2f2f2;
+		}
+		.top>div{
+			width: 120px;
+			height: 24px;
+			text-align: center;
+			float: left;
+			margin-top: 35px;
+		}
+		.top a{
+			color: #444444;
+			text-decoration: none;
+		}
+		.right{
+			width: 298px;
+			height: 1250px;
+			background-color: #fcfcfc;
+			float: left;
+			border: 1px solid #ececec;
+		}
+		.abstract {
+			margin-left: 40px;
+		}
+		.abstract p{
+			text-indent: 1cm;
+			font-size: 18px;
+			color: #666666;
+		}
+		.img{
+			width: 700px;
+			height: 155px;
+	        text-align: center;
+	        margin-bottom: 50px;
+		}
+		.img img{
+			width: 180px;
+			height: 155px;
+		}
+		.evaluate{
+			width: 680px;
+			height: 210px;
+			background-color: #fcfcfc;
+			border-top: 1px solid #F1F1F1;
+			padding-left: 20px;
+			padding-top: 20px;
+		}
+		.color{
+			color: #2abbbb;
+		}
+		.evaluate>div:first-child{
+			font-size: 20px;
+		}
+		.evaluate>div:nth-child(2){
+			font-size: 18px;
+		}
+		.font-size{
+			font-size: 20px;
+			color: red;
+		}
+		.font12{
+			font-size: 18px;
+			color: #999999;
+		}
+		.font-size-16{
+			font-size: 16px;
+			color: red;
+		}
+		.evaluate em{
+			font-style: normal;
+			display: inline-block;
+			font-size: 16px;
+			border: 1px solid #999999;
+			border-radius:25px;
+			padding: 3px 15px;
+			color:#2abbbb ;
+			margin-top: 20px;
+		}
+		.interaction{
+			width: 700px;
+			height: 320px;
+			background-color: #FFFFFF;
+			
+		}
+		.photo{
+			width: 55px;
+			height: 300px;
+			float: left;
+			padding-top: 20px;
+			padding-left: 25px;
+		}
+		.photo img{
+			width: 50px;
+			height: 50px;
+			border-radius:50%;
+			overflow:hidden;
+			
+		}
+		.comment{
+			width: 620px;
+			height: 320px;
+			float: left;
+		}
+		.comment>div:nth-child(2){
+			color: #999999;
+			margin-top: 5px;
+		}
+		.comment em{
+			display: inline-block;
+			font-style: normal;
+			border: 1px solid #999999;
+			border-radius: 25px;
+			padding: 2px 10px;
+			margin-top: 10px;
+			color: #999999;
+		}
+		.comment>div:nth-child(4){
+			color: #999999;
+			margin-top: 20px;
+		}
+		.comment>div:nth-child(5){
+			color: #999999;
+			margin-top: 30px;
+			margin-left:400px ;
+		}
+		.comment>div:nth-child(6){
+			background-color: #FCFCFC;
+			margin-top: 20px;
+			width: 600px;
+			height: 55px;
+			padding-top: 20px;
+			padding-left: 10px;
+			color: #999999;
+		}
+		.date>div{
+			display: inline-block;
+		}
+		.date>div:first-child{
+			width: 30px;
+			height: 25px;
+			background-image: url(img/icon_appeal.png);
+			background-position:3px -112px;
+		}
+		.date>div:nth-child(2){
+			color: #2abbbb;
+		}
+		.turning{
+			width: 700px;
+			height: 110px;
+			margin-top: 20px;
+			background-color: #FFFFFF;
+		}
+		.turning>div:first-child{
+			width: 650px;
+			height: 40px;
+			border-top: 1px dashed #999999;
+			background-color: #FFFFFF;
+			margin: auto;
+		}
+		.turning>div:nth-child(2){
+			width: 700px;
+			height: 60px;
+			text-align: center;
+		}
+		.turning a{
+			display: inline-block;
+			border: 1px solid #999999;
+			text-decoration: none;
+			padding: 5px 10px;
+			font-size: 18px;
+			color: #666666;
+		}
+		.people{
+			width: 270px;
+			height: 160px;
+			padding-top: 20px;
+			padding-left: 30px;
+		}
+		.display>div{
+			display: inline-block;
+			margin-top: 10px;
+		}
+		.border{
+			
+			background-color: #FFFFFF;
+			font-size: 16px;
+			color: #8fb8da;
+			padding: 3px 5px;
+		}
+		.font-size-14{
+			font-size: 14px;
+			color: #666666;
+		}
+		.display a{
+			text-decoration: none;
+			color: #666666;
+		}
+		.display a:hover{
+			text-decoration: underline;
+			color: #00aaff;
+		}
+		.message{
+			width: 268px;
+			height: 35px;
+			padding-top: 20px;
+			padding-left: 30px;
+			background-color: #FFFFFF;
+		}
+		.address{
+			width: 260px;
+			height: 300px;
+			margin-top: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.address>div{
+			margin-top:10px;
+			font-size: 14px;
+			color: #666666;
+		}
+		.address>div:last-child{
+			margin-left: 170px;
+		}
+		.address a{
+			text-decoration: none;
+			color: #3683b5;
+		}
+		.address a:hover{
+			text-decoration: underline;
+			color: #00aaff;
+		}
+		.address span{
+			display: inline-block;
+			background-image: url(img/icon_appeal.png);
+			background-position: 0 3px;
+			width: 20px;
+			height: 20px;
+			margin-top: 10px;
+		}
+		/**star部分**/
+		.star{
+			width: 1000px;
+			height: 140px;
+			margin: auto;
+			background-color: #F2F2F2;
+			
+		}
+		.star>a{
+			display: inline-block;
+			margin-top: 20px;
+			padding: 10px 15px;
+			margin-left: 12px;
+			background-color: #FFFFFF;
+		}
+		.star>a:hover{
+			border: 1px solid red;
+		}
+		/**footer部分**/
+		.footer{
+			width: 100%;
+			height: 100px;
+			background-color: #FFFFFF;
+		}
+		.footer>div{
+			text-align: center;
+			margin-top: 10px;
+			color: #666666;
+			font-size: 14px;
+		}
+		.footer a{
+			display: inline-block;
+			text-decoration: none;
+			color: #666666; 
+			font-size: 14px;
+			margin-top: 10px ;
+		}
+		.footer a:hover{
+			color: #00AADB;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="logo">
+				<img src="img/smLogo.jpg" />
+			</div>
+			<div class="homePage">
+				<a href="">首页</a>
+			</div>
+			<div class="explorer">
+				<a href="">浏览</a>
+			</div>
+			<div class="search">
+				<div><a href="">职位</a></div>
+				<div><input type="text" placeholder="找一找，总有适合您的工作"/></div>
+				<div>搜索</div>
+			</div>
+			<div class="highSearch">
+				<a href="">高级搜索</a>
+			</div>
+			<div class="jobRead">
+				<a href="">职位订阅</a>
+			</div>
+			<div class="login">
+			    <a href="">登录</a>
+			</div>
+			<div class="register">
+			    <a href="">注册</a>
+			</div>
+		</div>
+		<div class="content">
+			<div class="companyInfo">
+				<div class="companyInfo-logo">
+					<img src="img/copy20150805121736ent49no58.jpg" />
+				</div>
+				<div class="companyInfo-desc">
+					<div>汇博人才网</div>
+					<div>重庆聚焦人才服务有限公司<img src="img/newJob_10.png"></div>
+					<div>
+						<img src="img/newJob_58.png" />
+						<span>专业高效的招聘服务平台，旗下拥有汇博人才网、汇博人才市场</span>
+						<img src="img/newJob_59.png" />
+					</div>
+					<div>
+						<em>双休</em>
+						<em>五险</em>
+						<em>绩效奖金</em>
+						<em>团队聚餐</em>
+						<em>工作氛围轻松</em>
+						<em>帅锅美女多</em>
+					</div>
+				</div>
+			<div class="companyInfo-operate">
+				<div>
+					<img src="img/newJob_64.png" />
+					<span>加关注</span>
+				</div>
+				<div>举报</div>
+			</div>
+			<div class="position">
+					<div>84%</div>
+					<div>两周内简历回复率</div>
+				</div>
+			<div class="number">
+				<div>
+					<span>84%</span>
+					<span class="font">回复率</span>
+				</div>
+				<div>
+					<span>34小时</span>
+					<span class="font">回复时间长</span>
+				</div>
+				<div>
+					<span>201</span>
+					<span class="font">面试评价</span>
+				</div>
+				<div>
+					<span>17</span>
+					<span class="font">在招岗位</span>
+				</div>
+				<div>
+					<span>今天</span>
+					<span class="font">登陆时间</span>
+				</div>
+			</div>
+			<div class="details">
+				<div class="left">
+					<div class="top">
+						<div><a href="">公司简介</a></div>
+						<div><a href="">在招职位（17）</a></div>
+					</div>
+					<div class="abstract">
+						<p>
+							汇博（重庆聚焦人才服务有限公司）是国内成立较早的招聘求职平台，现已发展成为重庆地区规模大、技术先进、综合服务功能齐全的人才服务企业。
+						</p>
+						<p>
+							公司旗下有网站和现场两大主力品牌“汇博人才网”、“汇博人才市场”。“汇博人才网（www.huibo.com）”目前是西南地区规模大、成立早、访问量高、服务客户品质好的专业人才招聘网站。“汇博人才市场”依托“汇博人才网”采取定期举办创新的线上线下互动式现场招聘会。
+						</p>
+						<p>
+							公司现有员工200余人，本科及专科学历占总人数的75%以上。是“重庆市高校毕业生就业见习基地”和“港澳台青年人才重庆实践基地”。
+						</p>
+						<p>
+							未来，期待您的加入！
+						</p>
+					</div>
+					<div class="img">
+						<img src="img/0516095011745_127.jpg"/>
+						<img src="img/0516100206781_583.jpg" />
+						<img src="img/0301123741199_551.jpg"/>
+					</div>
+					<div class="evaluate">
+						<div>面试评价<span class="color">（201）</span></div>
+						<div>总体评价：<img src="img/四颗星.png"><span class="font-size">4.1分</span></div>
+						<div>
+							<span class="font12">职位描述：</span>
+							<img src="img/四颗星.png">
+							<span class="font-size-16">4.1分</span>
+							<span class="font12">面试体验：</span>
+							<img src="img/四颗星.png">
+							<span class="font-size-16">4.1分</span>
+						</div>
+						<div>
+							<em>HR很随和<span class="font-size-16">(81)</span></em>
+							<em>面试官很赞<span class="font-size-16">(80)</span></em>
+							<em>面试效率高<span class="font-size-16">(42)</span></em>
+							<em>环境高大上<span class="font-size-16">(35)</span></em>
+							<em>公司很有前途<span class="font-size-16">(6)</span></em>
+						</div>
+					</div>
+					<div class="interaction">
+							<div class="photo">
+								<img src="img/timthumb.jpg" >
+							</div>
+							<div class="comment">
+							    <div>
+								    <span>时**</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								    <span>职位描述相符：<img src="img/2-4颗星星.png"></span>
+								    <span>面试体验：<img src="img/2-3颗星星.png"></span>
+							    </div>
+							    <div>面试职位：行政公关经理</div>
+							    <div>
+							    	<em>面试效率高</em>
+							    	<em>HR很随和</em>
+							    </div>
+							    <div>
+							    	<div>面试经过：</div>
+							    	<div>沟通顺畅，面试专业；公司氛围很好，有活力，期待加入</div>
+							    </div>
+							    <div class="date">
+							    	<div></div>
+							    	<div>有用（0）</div>
+							    	<div>| 2018-04-27</div>
+							    </div>
+							    <div>
+							    	<div>企业回复：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2018-04-27</div>
+							    	<div>您好，感谢您支持汇博~</div>
+							    </div>
+							</div>
+					</div>
+					<div class="turning">
+					     <div></div>
+					     <div>
+					     	<a href="">1</a>
+					     	<a href="">2</a>
+					     	<a href="">3</a>
+					     	<a href="">4</a>
+					     	<a href="">5</a>
+					     	<a href="">6</a>
+					     	<a href="">7</a>
+					     	<a href="">8</a>
+					     	<a href="">9</a>
+					     	<a href="">10</a>
+					     	<a href="">...</a>
+					     	<a href="">21</a>
+					     	<a href="">></a>
+					     </div>
+					</div>
+			</div>
+				<div class="right">
+					<div class="people">
+						<div class="display">
+							<div class="border">行业</div>
+							<div class="font-size-14">人力资源服务,互联网/移动互联网</div>
+						</div>
+						<div class="display">
+							<div class="border">性质</div>
+							<div class="font-size-14">民营</div>
+						</div>
+						<div class="display">
+							<div class="border">规模</div>
+							<div class="font-size-14">101-500人</div>
+						</div>
+						<div class="display">
+							<div class="border">网址</div>
+							<div ><a href="http://www.huibo.com">http://www.huibo.com</a></div>
+						</div>
+					</div>
+					<div class="message">
+						<div>
+							<img src="img/message.png" />
+							<span>给我留言</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+							<img src="img/resumeNbtn.png" />
+						</div>
+					</div>
+					<div class="address">
+						<div>公司地址</div>
+						<div>江北富力.海洋广场4栋负2-56号（工商银行旁电梯入口）</div>
+						<div>
+							<img src="img/微信截图_20180509175247.png" />
+						</div>
+						<div>
+							<span class="map"></span>
+							<a href="">查看地图</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="star">
+			<img src="img/star_employer_job.png" />
+			<a href=""><img src="img/full0510859115.png"></a>
+			<a href=""><img src="img/full0626520587.jpg"></a>
+			<a href=""><img src="img/full0626338498.png"></a>
+			<a href=""><img src="img/full0626142548.png"></a>
+		</div>
+		<div class="footer">
+			<div>
+				<a href="">关于汇博</a>&nbsp;|&nbsp;
+				<a href="">联系我们</a>&nbsp;|&nbsp;
+				<a href="">诚聘英才</a>&nbsp;|&nbsp;
+				<a href="">品牌合作</a>&nbsp;|&nbsp;
+				<a href="">媒体合作</a>&nbsp;|&nbsp;
+				<a href="">友情链接</a>&nbsp;|&nbsp;
+				<a href="">法律声明</a>&nbsp;|&nbsp;
+				<a href="">隐私政策</a>
+			</div>
+			<div>©2018 汇博网 版权所有  |  增值电信业务经营许可证：渝B2-20060063  |  人才中介服务许可证：渝新委发[2012] 124号  |  渝公网安备 50010502001182号</div>
+			<div>招聘单位无权收取任何费用,请求职人员加强自我保护意识,按劳动法规保护自身权益,警惕虚假招聘,避免上当受骗!</div>
+		</div>
+	</body>
+</html>
