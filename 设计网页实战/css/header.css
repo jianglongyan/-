@@ -1,0 +1,39 @@
+.header{
+    height: 120px;
+    width: 1046px;
+    margin: 0 auto;
+}
+.header-left{
+    float: left;
+    line-height: 120px;
+}
+.header-left img{
+    width: 150px;
+    height: 52px;
+}
+.header-right{
+    float: right;
+    line-height: 120px;
+    
+}
+.header-right ul{
+    margin-top: 60px;
+}
+.header-right ul li{
+   line-height: 13px;
+    float: left;
+}
+.header-right ul li a{
+    text-decoration: none;
+    border-right: 1px solid #000;
+    height: 13px;
+    font-size: 16px;
+    padding: 0 25px;
+    color: #666;
+} 
+.header-right ul li:last-child a{
+    border-right: none;
+} 
+.header-right ul li a:hover{
+    color: #000;
+}

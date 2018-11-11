@@ -32,7 +32,7 @@ function timer(){
     time=setInterval(function(){
         show();
         i++;
-        if(i==4){
+        if(i==3){
             i=0;
         }
     },2000)
